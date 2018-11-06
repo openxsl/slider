@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../demo.xsl"?>
+<root>
+    <env>
+        <domain>local</domain>
+    </env>
+    <login>
+        <uid>git/wurui</uid>
+        <nick>wurui</nick>
+    </login>
+    <p>
+        <title>slider demo page</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+    <ui-imglist>
+    <i>
+        <img>http://openxsl4dev.oss-cn-shanghai.aliyuncs.com/uploads/git/wurui/img/2ag7uubwmTj34i79t6Rl9ypA4le-940.png</img>
+        <title>声罄科技介绍</title>
+        <href></href>
+    </i>
+</ui-imglist>
+    </data>
+</root>
