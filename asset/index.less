@@ -1,3 +1,62 @@
 .oxmod-slider{
+  overflow: hidden;
+
+  .transition{
+    transition: all .2s;
+  }
 /* CSS */
+  .slider-window{
+    //overflow: hidden;
+  }
+  .slider-imgs{
+    font-size:0;
+    white-space: nowrap;
+    //overflow:hidden;
+    //transform: translate( -50%,0);
+   // transition: all 1s;
+  }
+  .slider-img{
+    display: inline-block;
+    width:100%;
+    padding-bottom: 50%;
+    //max-height:300px;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    //background-image: url(attr(data-src));
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+  .dot{
+    width:6px;
+    height:6px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(100,100,100,.8);
+    margin:2px;
+  }
+  .index-dots{
+    margin-top:-30px;
+    height:20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .loop(@n, @i: 1) when (@i =< @n) {
+
+    [data-on="@{i}"]{
+      .dot:nth-child(@{i}){
+        background-color: rgba(255,100,0,.8);
+      }
+      .slider-window{
+        transform: translate((@i * -100% + 100%),0);
+      }
+    }
+    .loop(@n,(@i + 1));    // next iteration
+  }
+
+  .loop(10);
+
  }

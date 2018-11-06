@@ -15,12 +15,22 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-    <ui-imglist>
-    <i>
-        <img>http://openxsl4dev.oss-cn-shanghai.aliyuncs.com/uploads/git/wurui/img/2ag7uubwmTj34i79t6Rl9ypA4le-940.png</img>
-        <title>声罄科技介绍</title>
-        <href></href>
-    </i>
-</ui-imglist>
+        <ui-imglist>
+            <i>
+                <img>http://i.oxm1.cc/uploads/git/wurui/img/2a95p96dgTja6nsfccRzevdA3trc-667.jpg</img>
+                
+                <href></href>
+            </i>
+            <i>
+                <img>http://i.oxm1.cc/uploads/git/wurui/img/2a95p90pgTja6nsl0cRhvhmAm0m-714.jpg</img>
+                
+                <href></href>
+            </i>
+            <i>
+                <img>http://i.oxm1.cc/uploads/git/wurui/img/2a9eqvnhaTj9xm5y8iRvbf3A14ul-750.jpg</img>
+                
+                <href></href>
+            </i>
+        </ui-imglist>
     </data>
 </root>

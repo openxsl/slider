@@ -2,9 +2,25 @@
     <xsl:template match="/root" name="openxsl.slider">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-slider" ox-mod="slider">
-            <h1>
-                This is mod slider;
-            </h1>
-        </div>
+        	<xsl:variable name="list" select="data/ui-imglist/i[position() &lt;= 10]"/>
+            <div data-on="1" data-count="{count($list)}">
+		        <div class="slider-window transition">
+		            <div class="slider-imgs">
+		                <xsl:for-each select="$list">
+		                    <a href="{href}" class="slider-img" style="background-image:url({img})">
+		                        <!--
+		                        <img src="{src}" title="{title}" />-->
+		                    </a>
+		                </xsl:for-each>
+		            </div>
+		        </div>
+		        <div class="index-dots">
+		            <xsl:for-each select="$list">
+		            	<i class="dot"></i>
+		            </xsl:for-each>
+		        </div>
+		    </div>
+		      
+		</div>
     </xsl:template>
 </xsl:stylesheet>
