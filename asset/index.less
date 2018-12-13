@@ -47,7 +47,7 @@
   .loop(@n, @i: 1) when (@i =< @n) {
 
     [data-on="@{i}"]{
-      .dot:not(:nth-child(@{i})){
+      .dot:not(.dot-@{i}){
         //background-color: rgba(255,100,0,.8);
         background-color: rgba(100,100,100,.8);
       }

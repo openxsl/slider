@@ -14,9 +14,11 @@ define([],function(){
             return
         }
         
-        var sliders=$('.slider-img',$div);
+        var sliders=$('.slider-img',$div),
+        dot1=$('.dot-1',$div);
         sliders.parent().append(sliders.eq(0).clone())
         count+=1;
+        dot1.addClass('dot-'+count)
 
         setInterval(function(){
             if(!curIndex){

@@ -16,7 +16,7 @@
 		        </div>
 		        <div class="index-dots">
 		            <xsl:for-each select="$list">
-		            	<i class="dot skin-bgcolor"></i>
+		            	<i class="dot dot-{position()} skin-bgcolor"></i>
 		            </xsl:for-each>
 		        </div>
 		    </div>
